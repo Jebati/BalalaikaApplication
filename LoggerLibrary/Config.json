@@ -1,0 +1,21 @@
+﻿{
+  "LogToStd": false, // Выводить логи в STDOUT?
+  "LogToFile": false, // Выводить логи в FILE?
+  "SplitLevels": false, // Разделять логи, в зависимости от УРОВНЯ по разным файлам?
+  "TimeStamp": false,
+
+  "LogLevel": 1, // Уровень логирования: 
+  // 0 - debug и выше, 
+  // 1 - error и выше, 
+  // 2 - warn и выше, 
+  // 3 - info и выше
+
+  "Path": "any.log", // Путь до общего файла логов
+
+  "PathsLogLevels": { // Пути до файлов логов разного уровня. Если SplitLevels = true
+    "Debug": "debug.log",
+    "Error": "error.log",
+    "Warn": "warn.log",
+    "Info": "info.log"
+  }
+}
